@@ -1,32 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <header class="main-nav" id="nav">
+      <img src="~@/assets/logo/cat-logo.gif" />
+      <h1>My cat website</h1>
+      <p>We’re all cat lovers. That’s why we’re here. But have you ever stopped to wonder why we find cats so incredible loveable?</p>
+      <p>With Valentine’s Day just around the corner, it seemed the perfect time to explore our fascination with our self-domesticated feline friends.</p>
+      <!-- <nav class="main-nav">
+        <router-link to="/">Home</router-link>|
+        <router-link to="/about">About</router-link>
+      </nav> -->
+    </header>
+    <router-view />
+    <footer>
+      <small>all rights reserved to cats @2019</small>
+    </footer>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

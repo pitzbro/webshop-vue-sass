@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main class="home">
+    <cat-card v-for="(cat, index) in 12" :tagNum="index" />
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+// COMPONENTS
+import CatCard from '@/components/cats/cat-card.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    CatCard
   }
 }
 </script>

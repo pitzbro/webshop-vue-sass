@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueResource from 'vue-resource'
+Vue.use(VueResource);
+
+// Styles
+import "./styles/global.scss";
 
 Vue.config.productionTip = false
 
