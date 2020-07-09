@@ -1,5 +1,5 @@
 <template>
-  <section class="card-cat card">
+  <section class="card-cat card ratio-square">
     <img class="cat-image" :src="`https://cataas.com/cat/${tags[tagNum]}`"/>
     <div class="cat-tag">{{tags[tagNum]}}</div>
   </section>

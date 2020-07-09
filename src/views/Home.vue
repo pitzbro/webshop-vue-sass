@@ -1,5 +1,5 @@
 <template>
-  <main class="home">
+  <main class="home card-grid site-block">
     <cat-card v-for="(cat, index) in 12" :tagNum="index" />
   </main>
 </template>

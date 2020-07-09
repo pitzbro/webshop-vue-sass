@@ -5,7 +5,7 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource);
 
 // Styles
-import "./styles/global.scss";
+import "./styles/styles.scss";
 
 Vue.config.productionTip = false
 

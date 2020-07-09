@@ -1,0 +1,31 @@
+.card-cat {
+    font-family: GreatVibes, serif;
+    font-size:  rem(30px);
+    background-color: lighten($clr1, 10);
+
+    .cat-tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: #fff;
+        font-size: rem(60px);
+    }
+
+    .cat-image {
+        filter: grayscale(1);
+        // mix-blend-mode: multiply;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($clr1, .5);
+        background: linear-gradient(45deg, rgba($clr2, .5) 0%, rgba($clr1,.5) 100%); 
+        top: 0;
+        left: 0;
+    }
+}
