@@ -1,11 +1,12 @@
-.main-header {
-    min-height: 92vh;
+header.main-header {
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    .logo {
-        max-width: 240px;
+    img.logo {
+        width: 280px;
     }
 }
