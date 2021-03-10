@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="main-layout">
-    <header class="main-header" id="nav">
+    <header class="main-header full" id="nav">
       <img class="logo" src="~@/assets/logo/cat-logo.gif" />
       <h1>My cat website</h1>
       <p>We’re all cat lovers. That’s why we’re here. But have you ever stopped to wonder why we find cats so incredible loveable?</p>
