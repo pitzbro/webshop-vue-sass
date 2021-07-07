@@ -4,30 +4,30 @@
 
 html {
     font-family: Montserrat, sans-serif;
-    line-height: 1.6;
     color: $clr2;
+    line-height: 1.6;
 }
 
 body {
     margin: 0;
-    background-image: url('~@/assets/images/cats-pattern-background_1425-90.jpg');
-    background-size: 180px;
+    background-image: url(~@/assets/images/cats-pattern-background_1425-90.jpg);
+    background-size: 300px;
     background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: GreatVibes, serif;
     margin: 0 0 1rem;
-    font-weight: 500;
+    font-family: GreatVibes, serif;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: rem(50px);
+    font-size: em(46px);
 }
 
 p {
-    max-width: 48ch;
     margin: 0 0 1rem;
+    max-width: 42ch;
 }
 
 img {
