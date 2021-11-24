@@ -3,33 +3,35 @@
 }
 
 html {
-    font-family: Montserrat, sans-serif;
-    color: $clr2;
-    line-height: 1.6;
+//    font-family: Montserrat; 
+//    font-family: GreatVibes; 
+   font-family: Opensans, sans-serif; 
+   color: $clr2;
+   line-height: 1.8;
 }
 
 body {
     margin: 0;
-    background-image: url(~@/assets/images/cats-pattern-background_1425-90.jpg);
-    background-size: 300px;
-    background-attachment: fixed;
+    background-image: url(~@/assets/images/seamless-cute-cats-pattern-with-2206818.jpg);
+    background-size: 400px;
+    // background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: GreatVibes;
+    font-weight: 500;
     margin: 0 0 1rem;
-    font-family: GreatVibes, serif;
-    font-weight: 400;
 }
 
 h1 {
-    font-size: em(46px);
-}
-
-p {
-    margin: 0 0 1rem;
-    max-width: 42ch;
+    font-size: rem(60px);
 }
 
 img {
     width: 100%;
+}
+
+p {
+    margin: 0 0 1rem;
+    max-width: 60ch;
 }

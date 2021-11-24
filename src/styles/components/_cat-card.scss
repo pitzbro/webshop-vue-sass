@@ -1,32 +1,41 @@
 .card-cat {
-    // FLACH OPTION
-
-    // ::before {
-    //     content: "";
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     left:0;
-    //     top:0;
-    //     background: linear-gradient(to bottom left, rgba(#000, .4), rgba(#000, 1) );
-    //     z-index: -1;
-    // }
-
+    // position: relative;
     background-color: $clr1;
-    background-image: linear-gradient(to right top, #38438b, #944b94, #d75a88, #ff7e71, #ffb25f, #ffeb68);
 
-    .cat-image {
+    img.cat-image {
+        aspect-ratio: 1 / 1;
+        // height: 100%;
+        object-fit: cover;
         mix-blend-mode: multiply;
-        filter: grayscale(1);
+        filter: grayscale(1) contrast(1.3);
     }
 
     .cat-tag {
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: GreatVibes, serif;
-        font-size: rem(50px);
+        font-family: GreatVibes;
+        font-size: rem(64px);
         color: $clr5;
+        position: relative;
     }
+
+    @for $i from 1 through 6 {
+
+        &:nth-child(6n + #{$i}) {
+            background-color: adjust-hue($clr1, $i * 4deg);
+        }
+    }
+
+    &:nth-child(4n + 0) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    // &::before {
+    //     content: "";
+    //     background: linear-gradient(to top, $clr1 0%, rgba($clr1, 0) 100%);;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    // }
 }
