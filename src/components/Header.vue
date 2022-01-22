@@ -7,10 +7,10 @@
         <li><a href="#">services</a></li>
         <li><a href="#">Brands</a></li>
         <li><a href="#">References</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="active">Contact</a></li>
       </ul>
-      <a href="#" class="lang-switch">en</a>
-      <button class="main-header-search" v-html="search"></button>
+      <a href="#" class="lang-switch btn-dark">en</a>
+      <button class="main-header-search btn-dark" v-html="search"></button>
     </nav>
     <img src="~@/assets/images/header1920.jpg" alt="" class="main-header-image full">
     <div class="main-header-case">
@@ -18,14 +18,14 @@
       Museum of Modern Art Moma
       </span>
       <span class="case-city">New York</span>
-      <a href="#" class="btn-link">Case study</a>
+      <a href="#" class="btn">Case study</a>
     </div>
     <div class="main-header-slide-info slide-info">
       <span class="slide-name vertical-text">Light consulting & sales</span>
       <span class="slide-pager vertical-text">1/5</span>
       <span class="slide-pager-controler">
-        <button class="pager prev" v-html="arrowLeft"></button>
-        <button class="pager next" v-html="arrowRight"></button>
+        <button class="pager prev btn-dark" v-html="arrowLeft"></button>
+        <button class="pager next btn-dark" v-html="arrowRight"></button>
       </span>
     </div>
   </header>

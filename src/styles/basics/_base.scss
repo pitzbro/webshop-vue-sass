@@ -1,3 +1,7 @@
+::selection {
+    background-color: $clr1;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -31,15 +35,25 @@ p {
     max-width: 60ch;
 }
 
-button {
+.btn {
     @include btn;
+    
+    &-dark {
+        @include btn($type: dark);
+    }
+    
+    &-light {
+        @include btn($type: light);
+    }
 }
 
 
 // links
 a {
     color: $clr1;
-    &.btn-link {
-        @include btn;
+
+    &.active {
+        background-color: $clr1;
+        color: $clr2;
     }
 }

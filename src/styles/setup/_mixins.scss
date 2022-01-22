@@ -67,7 +67,7 @@
 
 // Buttons
 
-@mixin btn($type: regular, $bg: $clr1, $clr: $clr3, $padding: em(24px) em(44px), $hover: darken($bg, 6%)) {
+@mixin btn($type: regular, $bg: $clr1, $clr: $clr3, $padding: em(24px) em(44px), $hover: darken($bg, 8%)) {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -79,7 +79,7 @@
   border: none;
   cursor: pointer;
 
-  transition:  background-color .2s;
+  transition: background-color 0.2s;
 
   @if $type == regular {
     background-color: $bg;
@@ -101,5 +101,19 @@
       background-color: $clr1;
       color: $clr3;
     }
+  }
+}
+
+// Type
+
+@mixin type($type) {
+  @if $type == bold {
+    font-variation-settings: "wght" 430;
+  } @else if $type == boldCondensed {
+    font-variation-settings: "wght" 430, "wdth" 80;
+    letter-spacing: em(6.72px);
+  } @else if $type == condensed {
+    font-variation-settings: "wdth" 80;
+    letter-spacing: em(6.72px);
   }
 }

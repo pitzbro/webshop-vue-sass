@@ -38,13 +38,13 @@ header.main-header {
             a {
                 @include btn($type: light, $padding: em(42px) em(80px));
                 display: block;
+                &.active {
+                    background-color: $clr1;
+                    color: $clr3;
+                }
             }
         }
-        .lang-switch {
-            @include btn($type: dark);
-        }
         .main-header-search {
-            @include btn($type: dark);
             svg {
                 width: 20px;
             }
@@ -78,8 +78,7 @@ header.main-header {
         }
 
         .case-city {
-            letter-spacing: em(6.72px);
-            font-variation-settings: "wght" 430, "wdth" 80;
+            @include type(boldCondensed);
             opacity: 0.6;
             margin-bottom: em(44px);
         }
@@ -93,13 +92,25 @@ header.main-header {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        padding-top: em(60px);
+        text-transform: uppercase;
+        @include type(boldCondensed)
+        
         .slide-pager {
             flex: 1;
+            margin-bottom: em(30px);
         }
 
         .slide-pager-controler {
             display: flex;
+
+            button {
+                padding: em(30px) em(23px)
+            }
+
+            svg {
+                width: 6px;
+            }
         }
     }
 }
