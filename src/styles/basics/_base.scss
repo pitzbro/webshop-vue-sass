@@ -2,23 +2,18 @@
     box-sizing: border-box;
 }
 
-html {
-//    font-family: Montserrat; 
-//    font-family: GreatVibes; 
+html { 
    font-family: Bahnschrift, sans-serif; 
-   color: $clr2;
+   color: $clr3;
    line-height: 1.8;
 }
 
 body {
     margin: 0;
-    // background-image: url(~@/assets/images/seamless-cute-cats-pattern-with-2206818.jpg);
-    background-size: 400px;
-    // background-attachment: fixed;
+    background-color: $clr2;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: GreatVibes;
     font-weight: 500;
     margin: 0 0 1rem;
 }
@@ -34,4 +29,35 @@ img {
 p {
     margin: 0 0 1rem;
     max-width: 60ch;
+}
+
+// Buttons
+
+@mixin btn($bg: $clr1, $clr: $clr3, $padding: em(24px) em(44px)) {
+    background-color: $bg;
+    color: $clr;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: $padding;
+    line-height: 1.25;
+    font-size: em(14px);
+    font-variation-settings: 'wght' 430;
+
+    &:hover {
+        background-color: darken($bg, 6%);
+    }
+}
+
+button {
+    @include btn;
+}
+
+
+// links
+
+a {
+    color: $clr1;
+    &.btn-link {
+        @include btn;
+    }
 }

@@ -1,7 +1,7 @@
 <template>
-  <header class="main-header">
-    <div v-html="logo"></div>
-    <nav>
+  <header class="main-header full">
+    <div v-html="logo" class="main-header-logo"></div>
+    <nav class="main-header-nav">
       <ul class="main-nav">
         <li><a href="#">About us</a></li>
         <li><a href="#">services</a></li>
@@ -10,15 +10,15 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <img src="~@/assets/images/header1920.jpg" alt="">
-    <div class="case-nav">
+    <img src="~@/assets/images/header1920.jpg" alt="" class="main-header-image full">
+    <div class="main-header-case">
       <span class="case-title">
       Museum of Modern Art Moma
       </span>
-      New York
+      <span class="case-city">New York</span>
       <a href="#" class="btn-link">Case study</a>
     </div>
-    <div class="slide-info">
+    <div class="main-header-slide-info slide-info">
       <span class="slide-name">Light consulting & sales</span>
       <span class="slide-pager">1/5</span>
       <span class="slide-pager-arrows">

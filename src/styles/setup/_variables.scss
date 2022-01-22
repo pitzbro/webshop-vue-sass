@@ -1,18 +1,16 @@
 
 // COLOR PALETTE
-$clr1: #ce2e6c;
-$clr3: #ffb5b5;
-$clr2: #504658;
-$clr4: #f0decb;
-$clr5: #fff;
+$clr1: #FF521C;
+$clr2: #000;
+$clr3: #fff;
 
 // LAYOUT
 $layoutPadding: 20px;
 
 // LAYOUT BREAKPOINTS
-$break-narrow: 460px;
-$break-normal: 640px;
-$break-wide: 960px;
+$break-narrow: 600px;
+$break-normal: 1280px;
+$break-wide: 1920px;
 
 $padded-break-narrow: $break-narrow + $layoutPadding * 2;
 $padded-break-normal: $break-normal + $layoutPadding * 2;

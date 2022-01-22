@@ -1,18 +1,72 @@
 header.main-header {
+    display: grid;
     min-height: 100vh;
-    // display: flex;
-    justify-items: center;
-    align-content: center;
+    grid-template-columns: minmax(20%, 570px) 1fr;
+    grid-template-rows: 287px 1fr em(100px, 14px);
 
-    background: linear-gradient(to bottom, $clr5 0%,$clr5 80%, rgba($clr5, 0) 100%);
+    grid-template-areas:
+        "logo slide"
+        "case slide"
+        "nav nav";
 
-    .logo {
-        max-width: 260px;
-        transform: rotate(-11deg);
-        mix-blend-mode: multiply;
-        
-        @include for-narrow-layout {
-            max-width: 356px;
+    .main-header-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+         z-index: -1;
+    }
+
+    .main-header-logo {
+        grid-area: logo;
+        justify-self: start;
+        width: 174px;
+        padding: 22px;
+        margin: 60px;
+        background-color: $clr3;
+        color: $clr2;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .main-header-nav {
+        grid-area: nav;
+    }
+
+    .main-header-case {
+        grid-area: case;
+        justify-self: end;
+        align-self: center;
+        width: 320px;
+        background-color: $clr2; 
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 em(48px);
+
+        &::before {
+            content: "";
+            width: 10px;
+            height: 42px;
+            background-color: $clr1;
+            margin-bottom: em(42px);
         }
+        
+        .case-title {
+            font-size: em(26px);
+            line-height: 1.23;
+        }
+        
+        .case-city {
+            letter-spacing: em(6.72px);
+            font-variation-settings: 'wght' 430, 'wdth' 80;
+            opacity: .6;
+            margin-bottom: em(44px);
+        }
+    }
+
+    .main-header-slide-info {
+        grid-area: slide;
     }
 }
