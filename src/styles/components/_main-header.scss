@@ -1,8 +1,8 @@
 header.main-header {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: minmax(20%, 570px) 1fr;
-    grid-template-rows: 287px 1fr auto;
+    grid-template-columns: minmax(auto, 30%) 1fr;
+    grid-template-rows: 234px 1fr auto;
 
     grid-template-areas:
         "logo slide"
@@ -22,7 +22,7 @@ header.main-header {
         justify-self: start;
         width: 174px;
         padding: 22px;
-        margin: 60px;
+        margin: 60px 60px 0;
         background-color: $clr3;
         color: $clr2;
         display: flex;
@@ -63,6 +63,7 @@ header.main-header {
         align-items: center;
         text-align: center;
         padding: 0 em(48px);
+        margin-inline-start: 60px;
 
         &::before {
             content: "";
@@ -114,3 +115,4 @@ header.main-header {
         }
     }
 }
+
