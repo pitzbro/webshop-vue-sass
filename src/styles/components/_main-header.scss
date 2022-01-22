@@ -80,7 +80,7 @@ header.main-header {
 
         .case-city {
             @include type(boldCondensed);
-            opacity: 0.6;
+            color: $clr4;
             margin-bottom: em(44px);
         }
     }
