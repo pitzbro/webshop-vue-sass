@@ -31,30 +31,12 @@ p {
     max-width: 60ch;
 }
 
-// Buttons
-
-@mixin btn($bg: $clr1, $clr: $clr3, $padding: em(24px) em(44px)) {
-    background-color: $bg;
-    color: $clr;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: $padding;
-    line-height: 1.25;
-    font-size: em(14px);
-    font-variation-settings: 'wght' 430;
-
-    &:hover {
-        background-color: darken($bg, 6%);
-    }
-}
-
 button {
     @include btn;
 }
 
 
 // links
-
 a {
     color: $clr1;
     &.btn-link {

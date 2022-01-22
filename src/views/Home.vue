@@ -19,7 +19,6 @@
 
 <script>
 // COMPONENTS
-import CatCard from "@/components/cats/cat-card.vue";
 import { miscellaneous, logos } from "../services/svg.service";
 
 export default {

@@ -2,7 +2,7 @@ header.main-header {
     display: grid;
     min-height: 100vh;
     grid-template-columns: minmax(20%, 570px) 1fr;
-    grid-template-rows: 287px 1fr em(100px, 14px);
+    grid-template-rows: 287px 1fr auto;
 
     grid-template-areas:
         "logo slide"
@@ -13,7 +13,8 @@ header.main-header {
         position: absolute;
         inset: 0;
         height: 100%;
-         z-index: -1;
+        z-index: -1;
+        object-fit: cover;
     }
 
     .main-header-logo {
@@ -29,7 +30,25 @@ header.main-header {
     }
 
     .main-header-nav {
+        display: flex;
+        justify-self: end;
         grid-area: nav;
+
+        .main-nav {
+            a {
+                @include btn($type: light, $padding: em(42px) em(80px));
+                display: block;
+            }
+        }
+        .lang-switch {
+            @include btn($type: dark);
+        }
+        .main-header-search {
+            @include btn($type: dark);
+            svg {
+                width: 20px;
+            }
+        }
     }
 
     .main-header-case {
@@ -37,7 +56,7 @@ header.main-header {
         justify-self: end;
         align-self: center;
         width: 320px;
-        background-color: $clr2; 
+        background-color: $clr2;
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
@@ -52,21 +71,35 @@ header.main-header {
             background-color: $clr1;
             margin-bottom: em(42px);
         }
-        
+
         .case-title {
             font-size: em(26px);
             line-height: 1.23;
         }
-        
+
         .case-city {
             letter-spacing: em(6.72px);
-            font-variation-settings: 'wght' 430, 'wdth' 80;
-            opacity: .6;
+            font-variation-settings: "wght" 430, "wdth" 80;
+            opacity: 0.6;
             margin-bottom: em(44px);
         }
     }
 
     .main-header-slide-info {
         grid-area: slide;
+        justify-self: end;
+        max-height: 670px;
+        background-color: $clr2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .slide-pager {
+            flex: 1;
+        }
+
+        .slide-pager-controler {
+            display: flex;
+        }
     }
 }
