@@ -1,8 +1,8 @@
 <template>
   <section class="news-container">
-    <span class="news-category">News</span>
+    <h2 class="news-category">News</h2>
     <div class="news">
-      <h2 class="news-title">Lorem ipsum dolor sit amet</h2>
+      <h3 class="news-title">Lorem ipsum dolor sit amet</h3>
       <p class="news-text">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam

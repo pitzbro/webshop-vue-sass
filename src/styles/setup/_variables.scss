@@ -9,8 +9,8 @@ $clr4: darken($clr3, 40%);
 $layoutPadding: 20px;
 
 // LAYOUT BREAKPOINTS
-$break-narrow: 600px;
-$break-normal: 1280px;
+$break-narrow: 1200px;
+$break-normal: 1360px;
 $break-wide: 1920px;
 
 $padded-break-narrow: $break-narrow + $layoutPadding * 2;

@@ -2,7 +2,7 @@ header.main-header {
     display: grid;
     min-height: 100vh;
     grid-template-columns: minmax(auto, 30%) 1fr;
-    grid-template-rows: 234px 1fr auto;
+    grid-template-rows: rem(234px) 1fr auto;
 
     grid-template-areas:
         "logo slide"
@@ -20,7 +20,7 @@ header.main-header {
     .main-header-logo {
         grid-area: logo;
         justify-self: start;
-        width: 174px;
+        width: rem(174px);
         padding: 22px;
         margin: 60px 60px 0;
         background-color: $clr3;

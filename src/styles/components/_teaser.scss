@@ -1,16 +1,11 @@
 .teaser {
-    &-start {
-        grid-column: 1 / span 2;
-    }
-    &-end {
-        grid-column: -3 / span 2;
-    }
 
     display: flex;
     flex-direction: column;
     align-items: center;
     
     img {
-        width: auto;
+        margin-bottom: rem(50px);
+        padding: 0 22%;
     }
 }

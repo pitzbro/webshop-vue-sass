@@ -1,0 +1,33 @@
+.news-container {
+    grid-template-rows: rem(190px) auto auto rem(190px);
+    grid-template-areas:
+        "teaser teaser . . . ."
+        "teaser teaser img img title title"
+        "teaser teaser img img news news"
+        "teaser teaser . . . .";
+    .news-image {
+        grid-area: img;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .news {
+        grid-area: news;
+        background: $clr3;
+        color: $clr2;
+        justify-self: start;
+        align-self: start;
+        padding: rem(85px) rem(60px) 0;
+        margin-inline-start: -14%;
+        z-index: 1;
+    }
+
+    .news-category {
+        grid-area: title;
+        align-self: start;
+    }
+
+    .teaser {
+        grid-area: teaser;
+    }
+}
