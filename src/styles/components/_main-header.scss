@@ -33,6 +33,8 @@ header.main-header {
         display: flex;
         justify-self: end;
         grid-area: nav;
+        top: 0px;
+        right: 0px;
 
         .main-nav {
             a {
@@ -95,8 +97,8 @@ header.main-header {
         align-items: center;
         padding-top: em(60px);
         text-transform: uppercase;
-        @include type(boldCondensed)
-        
+        @include type(boldCondensed);
+
         .slide-pager {
             flex: 1;
             margin-bottom: em(30px);
@@ -106,7 +108,7 @@ header.main-header {
             display: flex;
 
             button {
-                padding: em(30px) em(23px)
+                padding: em(30px) em(23px);
             }
 
             svg {
@@ -115,4 +117,3 @@ header.main-header {
         }
     }
 }
-
