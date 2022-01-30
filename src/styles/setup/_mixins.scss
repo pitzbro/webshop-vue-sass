@@ -122,4 +122,7 @@
     font-variation-settings: "wdth" 80;
     letter-spacing: em(6.72px);
   }
+  @else if $type == light {
+    font-variation-settings: "wght" 200;
+  }
 }

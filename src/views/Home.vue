@@ -8,6 +8,14 @@
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
       </p>
+      <button class="btn">Read more</button>
+      <div class="pager news-pager">
+        <ul class="clean-list flex">
+          <li class="active">1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
     </div>
 
     <img src="~@/assets/images/news915.jpg" alt="" class="news-image" />
