@@ -28,3 +28,8 @@
         @include layoutGTC($break-wide);
     }
 }
+
+
+.main-text {
+    margin-bottom: rem(90px);
+}
