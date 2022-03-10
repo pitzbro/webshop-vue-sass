@@ -37,7 +37,6 @@ import { miscellaneous, logos } from "../services/svg.service";
 
 export default {
   name: "home",
-  components: {},
 
   data: () => {
     return {

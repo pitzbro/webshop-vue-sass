@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Header from '../components/Header.vue'
-import Home from '../views/Home.vue'
+import News from '../components/News.vue'
+import MainText from '../components/MainText'
+import Cards from '../components/Cards'
 
 Vue.use(VueRouter)
 
@@ -12,7 +14,9 @@ const routes = [
     // component: Home
     components: {
       header: Header,
-      main: Home,
+      news: News,
+      mainText: MainText,
+      cards: Cards,
     }
   },
 ]
