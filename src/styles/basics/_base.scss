@@ -21,6 +21,12 @@ html {
 body {
     margin: 0;
     background-color: $clr2;
+
+    @include for-normal-layout {
+        &.sidebar-open {
+            overflow: hidden;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +50,6 @@ h2 {
 
 h3 {
     font-size: em(29px);
-    margin-bottom: em(60px, 29px)
 }
 
 img {

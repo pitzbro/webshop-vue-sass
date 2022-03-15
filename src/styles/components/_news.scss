@@ -36,7 +36,10 @@
     .news-pager {
         position: absolute;
         inset: auto 0 0 auto;
+    }
 
+    .news-title {
+        margin-bottom: em(60px, 29px);
     }
 
     .teaser {

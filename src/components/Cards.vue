@@ -1,7 +1,7 @@
 <template>
   <section class="cards-container">
-    <div class="card">
-      <div class="card-tag">Design</div>
+    <div class="card" @click="toggleSidebar">
+      <div class="card-tag tag-text">Design</div>
       <img
         src="~@/assets/images/shutterstock_1154928898.jpg"
         alt=""
@@ -11,13 +11,13 @@
     </div>
 
     <div class="card">
-      <div class="card-tag">Technic</div>
+      <div class="card-tag tag-text">Technic</div>
       <img src="~@/assets/images/Image_1.jpg" alt="" class="card-image" />
       <div class="card-desc">Technical and industrial lighting</div>
     </div>
 
     <div class="card">
-      <div class="card-tag">Safety & control</div>
+      <div class="card-tag tag-text">Safety & control</div>
       <img src="~@/assets/images/safety_light.jpg" alt="" class="card-image" />
       <div class="card-desc">Safety lighting and control</div>
     </div>
@@ -28,7 +28,9 @@
         alt=""
         class="news-item-image"
       />
-      <span class="item-name">Brand: <mark>Foscarini </mark> | Model: Twiggy</span>
+      <span class="item-name"
+        >Brand: <mark>Foscarini </mark> | Model: Twiggy</span
+      >
     </div>
   </section>
 </template>
@@ -36,5 +38,11 @@
 <script>
 export default {
   name: "Cards",
+
+  methods: {
+    toggleSidebar() {
+      document.body.classList.toggle("sidebar-open");
+    },
+  },
 };
 </script>
