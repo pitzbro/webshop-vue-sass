@@ -22,7 +22,7 @@
       <div class="card-desc">Safety lighting and control</div>
     </div>
 
-    <div class="teaser teaser-end align-self-center">
+    <div class="teaser teaser-center">
       <img
         src="~@/assets/images/teaser_image_2.jpg"
         alt=""
