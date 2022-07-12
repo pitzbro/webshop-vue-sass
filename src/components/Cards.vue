@@ -22,9 +22,9 @@
       <div class="card-desc">Safety lighting and control</div>
     </div>
 
-    <div class="teaser teaser-end">
+    <div class="teaser teaser-end align-self-center">
       <img
-        src="~@/assets/images/forscani_light_02.png"
+        src="~@/assets/images/teaser_image_2.jpg"
         alt=""
         class="news-item-image"
       />

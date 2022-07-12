@@ -2,9 +2,13 @@
 .flex {
     display: flex;
 }
-.inline-flex {
+.flex.inline-flex {
     display: inline-flex;
 }
+.align-self-center {
+    align-self: center;
+}
+
 
 // List 
 .clean-list {
